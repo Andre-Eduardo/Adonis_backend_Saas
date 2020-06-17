@@ -21,6 +21,7 @@ const providers = [
   'adonis-kue/providers/KueProvider',
   '@adonisjs/redis/providers/RedisProvider',
   '@adonisjs/mail/providers/MailProvider',
+  '@adonisjs/validator/providers/ValidatorProvider',
 ];
 
 /*
