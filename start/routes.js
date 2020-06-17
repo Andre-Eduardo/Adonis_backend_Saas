@@ -1,5 +1,7 @@
 'use strict';
 
+const { route } = require('@adonisjs/framework/src/Route/Manager');
+
 /*
 |--------------------------------------------------------------------------
 | Routes
@@ -25,4 +27,5 @@ Route.group(() => {
 
 Route.group(() => {
   Route.post('invites', 'InviteController.store');
+  route.resource('projects', 'ProjectController').apiOnly();
 }).middleware(['auth', 'team']);
